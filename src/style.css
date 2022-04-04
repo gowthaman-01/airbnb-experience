@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.gray {
+    color: #918E9B
+}
+
+.navbar {
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 70px;
+    padding: 20px 36px;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.airbnb-title {
+    color: #ff5a60;
+    margin-left: 10px;
+}
+
+.hero {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+.grid-image {
+
+    align-self: center;
+    max-width: 1000px;
+}
+
+
+.hero-content {
+    width: 55%;
+}
+
+.card {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.rating {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.star {
+    align-self: center;
+    margin-right: 5px;
+}
+
+.about {
+    padding: 0;
+    margin: 0;
+}
