@@ -1,20 +1,21 @@
 import React from "react";
-import katie from "../../src/images/katie.png"
-import star from "../../src/images/star.png"
 
-const Card = () => {
+const Card = (data) => {
     return (
         <div className="card">
-            <img src={katie} alt="katie" className="expert-image"></img>
-            <p className="rating">
-                <img src={star} alt="star" className="star"></img>
-                <p className="rating-info">
-                    5.0
-                    <span className="gray"> (6) • USA</span>
-                </p>
-            </p>
-            <p className="about">Life lessons with Katie Zaferes</p>
-            <p className="price"><strong>From $136</strong> / person</p>
+            <div className="experience-image-container">
+                <img src={`../images/${data.coverImg}`} alt={data.title} className="experience-image"></img>
+            </div>
+            
+            <div className="rating">
+                <img src="../images/star.png" alt="star" className="star"></img>
+                <div className="rating-info">
+                    {data.stats.rating}
+                    <span className="gray"> ({data.stats.reviewCount}) • {data.location}</span>
+                </div>
+            </div>
+            <p className="about">{data.title}</p>
+            <p className="price"><strong>From ${data.price}</strong> / person</p>
         </div>
     )
 }
