@@ -1,4 +1,4 @@
-THis is a clone of the Airbnb experiences landing page built using React components.
+This is a clone of the Airbnb experiences landing page built using React components.
 
 ![screenshot](./public/images/screenshot.png)
 
